@@ -33,6 +33,7 @@
                                    },
                                    "src/assets",
                                    {
+
                                         "glob": "**/*",
                                         "input": "src",
                                         "output": "/"
