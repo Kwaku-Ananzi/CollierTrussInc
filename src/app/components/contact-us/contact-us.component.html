@@ -103,20 +103,20 @@
                                                   </div>
                                              </div>
                                         </div>
-                                        <form action="" id="form" class="">
+                                        <form action="" id="form" class="" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                                              <div class="row">
                                                   <div class="col-md-6 col-sm-6 col-xs-12">
                                                        <div class="mb-3">
-                                                            <label for="name" class="form-label">Name</label>
-                                                            <input type="text" class="form-control" id="name"
-                                                                 aria-describedby="name" placeholder="Enter Your Name">
+                                                            <label for="fname" class="form-label">Name</label>
+                                                            <input type="text" class="form-control" id="fname" formControlName = 'fullName'
+                                                                 aria-describedby="fname" placeholder="Enter Your Name">
                                                        </div>
                                                   </div>
                                                   <div class="col-md-6 col-sm-6 col-xs-12">
                                                        <div class="mb-3">
                                                             <label for="mobile_no" class="form-label">Mobile
                                                                  No.</label>
-                                                            <input type="number" class="form-control" id="mobile_no"
+                                                            <input type="number" class="form-control" id="mobile_no" formControlName ='mobile_no'
                                                                  aria-describedby="mobile_no"
                                                                  placeholder="Enter Your Mobile No.">
                                                        </div>
@@ -125,7 +125,7 @@
                                                        <div class="mb-3">
                                                             <label for="email_id" class="form-label">Email
                                                                  ID</label>
-                                                            <input type="email" class="form-control" id="email_id"
+                                                            <input type="email" class="form-control" id="email_id" formControlName = 'email_id'
                                                                  aria-describedby="email_id"
                                                                  placeholder="Enter Your Email ID">
                                                        </div>
@@ -133,7 +133,7 @@
                                                   <div class="col-md-6 col-sm-6 col-xs-12">
                                                        <div class="mb-3">
                                                             <label for="subject" class="form-label">Subject</label>
-                                                            <input type="email" class="form-control" id="subject"
+                                                            <input type="email" class="form-control" id="subject" formControlName = 'subject'
                                                                  aria-describedby="subject" placeholder="Enter Subject">
                                                        </div>
                                                   </div>
@@ -142,7 +142,7 @@
                                                   <div class="col-xl-12">
                                                        <div class="mb-3">
                                                             <label for="comment" class="form-label">Comments</label>
-                                                            <textarea class="form-control" id="comment"
+                                                            <textarea class="form-control" id="comment" formControlName = 'comment'
                                                                  aria-describedby="comment"
                                                                  style="height: 100px"></textarea>
                                                        </div>
@@ -151,9 +151,9 @@
                                                        <div class="mb-3">
                                                             <label for="attach_file" class="form-label">Attach
                                                                  File</label>
-                                                            <input type="file" class="form-control" id="attach_file"
+                                                            <input type="file" class="form-control" id="attach_file" formControlName = 'attach_file'
                                                                  aria-describedby="attach_file"
-                                                                 placeholder="Attach File">
+                                                                 placeholder="Attach File" >
                                                        </div>
                                                   </div>
                                              </div>
