@@ -46,7 +46,6 @@ export class NavbarComponent implements AfterViewInit {
      }
 
 
-
      @HostListener('window:scroll', [])
      onWindowScroll() {
           this.isScrolled = window.scrollY > 250;
