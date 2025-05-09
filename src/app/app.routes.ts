@@ -5,10 +5,5 @@ export const routes: Routes = [
      {
           path: 'home',
           component: HeroComponent
-     },
-     {
-          path: '',
-          redirectTo: '/home',
-          pathMatch: 'full'
-     } // Default Route 
+     }
 ];
